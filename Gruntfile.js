@@ -78,6 +78,11 @@ module.exports = function (grunt) {
           { src: 'src/js/v3index.js', dest: 'dist/js/v3index.js' }
         ]
       }
+    },
+
+    watch: {
+      files: ['src/js/**/*.js', 'node_modules/pzpr/dist/**/*.js'],
+      tasks: ['dev']
     }
   });
 

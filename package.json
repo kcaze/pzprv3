@@ -28,7 +28,8 @@
     "release:zip": "sh -c 'cd dist; zip -9qr $0 * -x *.concat.js -x .DS_Store; mv $0 ..' pzprv3-$npm_package_version.zip",
     "clean": "del dist/* pzprv3-*.{zip,tar.gz,tar.bz2,tgz}",
     "lint": "eslint src tests",
-    "test": "eslint --quiet src tests"
+    "test": "eslint --quiet src tests",
+    "watch": "grunt watch"
   },
   "devDependencies": {
     "del-cli": "^2.0.0",
@@ -37,6 +38,7 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^2.1.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-newer": "^1.2.0",
     "webpack": "^4.39.2"
   },
