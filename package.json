@@ -20,6 +20,7 @@
   },
   "homepage": "http://pzv.js",
   "scripts": {
+    "dev": "grunt dev",
     "build": "eslint --cache --quiet src && grunt default",
     "release": "eslint --cache --quiet src && npm run clean && grunt release",
     "release:gzip": "sh -c 'cd dist; tar czf $0 --exclude *.concat.js --exclude .DS_Store *; mv $0 ..' pzprv3-$npm_package_version.tar.gz",
@@ -36,9 +37,10 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^2.1.0",
-    "grunt-newer": "^1.2.0"
+    "grunt-newer": "^1.2.0",
+    "webpack": "^4.39.2"
   },
   "dependencies": {
-    "pzpr": "^0.11.1"
+    "pzpr": "file:../pzprjs"
   }
 }

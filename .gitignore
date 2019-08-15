@@ -3,3 +3,5 @@ pzprv3-*
 node_modules
 .DS_Store
 .eslintcache
+.vscode
+package-lock.json
