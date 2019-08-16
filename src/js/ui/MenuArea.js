@@ -353,7 +353,7 @@ ui.menuarea = {
 		ui.notify.alert(str);
 	},
 	answersolve: function () {
-		console.log(ui.puzzle.solve());
+		ui.puzzle.solve();
 	},
 	answerclear: function () {
 		this.stopHovering();
