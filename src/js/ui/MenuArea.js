@@ -353,7 +353,9 @@ ui.menuarea = {
 		ui.notify.alert(str);
 	},
 	answersolve: function () {
-		ui.puzzle.solve();
+		ui.puzzle.solve().then(() => {
+			ui.menuconfig.set('mode', 'play');
+		});
 	},
 	answerclear: function () {
 		this.stopHovering();
