@@ -81,7 +81,7 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      files: ['src/js/**/*.js', 'node_modules/pzpr/dist/**/*.js'],
+      files: ['src/js/**/*.js', 'node_modules/pzpr/dist/**/*.js', 'src/**.html'],
       tasks: ['dev']
     }
   });
