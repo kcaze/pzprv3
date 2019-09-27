@@ -125,8 +125,9 @@ function importURL(){
 
 	var pzl = pzpr.parser.parseURL(search);
 
-	startmode = startmode || (!pzl.body ? 'EDITOR' : 'PLAYER');
-	if(startmode==='PLAYER'){ onload_option.type = 'player';}
+	//startmode = startmode || (!pzl.body ? 'EDITOR' : 'PLAYER');
+	//if(startmode==='PLAYER'){ onload_option.type = 'player';}
+  startmode = 'EDITOR';
 
 	return pzl;
 }
