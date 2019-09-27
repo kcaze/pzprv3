@@ -63,6 +63,7 @@ v3index.extend({
 
 		self.setTranslation();
 		self.translate();
+    self.click_tab('solvers');
 	},
 	input_init : function(){
 		var cnt=0;
@@ -441,13 +442,28 @@ var pstate = {
 			'kakuru','view','bosanowa','nanro','cojun','renban','sukororoom','hanare','kazunori',
 			'wagiri','shugaku','hakoiri','roma','toichika','cbblock','nondango','onsen','armyants','sato'],
 	orig  :['mochinyoro','ayeheya','aho'],
-	genre :['tapa','arukone','yinyang','building','kropki','starbattle','easyasabc','walllogic']
+	genre :['tapa','arukone','yinyang','building','kropki','starbattle','easyasabc','walllogic'],
+  // This has to go at the end for overriding purposes.
+	solvers :[
+    'akari',
+    'building',
+    'fillomino',
+    'hashi',
+    'mashu',
+    'nurikabe',
+    'slither',
+    'starbattle',
+    'sudoku',
+    'tapa',
+    'yajilin',
+  ],
 };
 var tabstate = {
 	lunch:'lunch', lunch2:'lunch', lunch3:'nigun',
 	testa:'nigun', nigun:'nigun',
 	trial:'omopa', omopa:'omopa',
-	orig :'extra', genre:'extra'
+	orig :'extra', genre:'extra',
+  solvers:'solvers',
 };
 
 var genres = {};
