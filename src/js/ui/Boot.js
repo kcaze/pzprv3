@@ -98,7 +98,8 @@ function importURL(){
 	if(!!search){ require_accesslog = false;}  /* index.htmlからのURL読み込み時はアクセスログをとらない */
 	
 	/* index.htmlからURLが入力されていない場合は現在のURLの?以降をとってくる */
-	search = search || location.search;
+	search = decodeURIComponent(search || location.search);
+  console.log(search);
 	if(!search){ return null;}
 	
 	/* 一旦先頭の?記号を取り除く */
